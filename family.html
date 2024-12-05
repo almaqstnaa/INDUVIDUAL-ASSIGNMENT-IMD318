@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F7F5F2; 
+        color: #333;
+    }
+
+    .header {
+        background-color: #6B705C; 
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        padding: 20px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        justify-items: center; 
+        grid-template-rows: auto;
+    }
+
+    .family-member {
+        background-color: #DDBEA9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: justify; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .family-member h2 {
+        font-size: 1.8rem;
+        color: #4A4A4A;
+    }
+
+    .family-member p {
+        font-size: 1.1rem;
+        color: #6A6A6A;
+    }
+
+    .image {
+        max-width: 80%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+     .footer {
+        background-color: #6B705C;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            grid-template-columns: 1fr;       
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Family Information</h1>
+</div>
+
+<div class="content">
+    <div class="family-member grid-item-1">
+        <h2>MY SISTERS</h2>
+        <img src="sisters.jpg" alt="My sisters" class="image">
+        <p>This picture shows me with my sisters. I have two older sisters who are my greatest supporters and role models. On the left is my eldest sister, NorFadilah binti Zamri, whom I fondly call Kak Yong. She is 38 years old and is always there to offer guidance and care. On the left is my second sister, Nurul Shuhada binti Zamri, or Kak Yang, aged 35. Both Kak Yong and Kak Yang treat me like their baby, even though I am now 20 years old. I am so lucky to have them showering me with endless love and support.</p>
+    </div>
+
+    <div class="family-member grid-item-2">
+        <h2>MY BELOVED MOM</h2>
+        <img src="mak.jpg" alt="My Mom" class="image">
+        <p>My mother, Normah binti Zainordin, was born on April 10, 1966, and is currently 58 years old. She is the strongest and most loving person I know. She has been a guiding light in my life, raising me with wisdom and compassion after my father passed away when I was just 4 years old. Even though my father is no longer with us, I always pray for his peace and happiness in the hereafter. He remains a significant part of my heart, and I will forever miss him. My mom's unwavering love and sacrifices inspire me every day to be a better person.</p>
+    </div>
+
+    <div class="family-member grid-item-3">
+        <h2>MY BROTHERS</h2>
+        <img src="brothers.jpg" alt="My Brothers" class="image">
+        <p>I am blessed to have four amazing brothers: Muhammad Azmi, whom I lovingly call Abang Nyah, is the eldest brother and a pillar of wisdom and guidance. Next is Muhammad Roslan, or Abang Cho, who fills our family with joy and his lively personality. Muhammad Shahrul Nizam, known as Abang Chik, is incredibly dependable and ensures everyone is looked after. Finally, there is Muhammad Amirul Danial, my youngest brother, whom I affectionately call Abang Chu. He is full of energy and creativity. Together, they form a strong support system, and I cherish the bond we share as siblings.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy;2024 All Rights Reserved | Designed by Alma Qistina</p>
+</div>
+
+</body>
+</html>

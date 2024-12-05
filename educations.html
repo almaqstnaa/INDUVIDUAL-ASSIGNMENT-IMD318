@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Education</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F1E6F6;
+            color: #333;
+            
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tab-button {
+            background-color: #B19CD9;
+            color: white;
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            margin-right: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+
+        .tab-button:hover {
+            background-color: #9B7FBF;
+            transform: scale(1.05);
+        }
+
+        .tab-content {
+            padding: 60px;
+            background-color: #E4D9F1;
+            text-align: center;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .header {
+            background-color: #B19CD9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3;
+        }
+
+        .content {
+            padding: 20px;
+            margin-top: 20px;
+	    text-align: justify;
+        }
+
+        .tab-content img {
+            width: 100%;
+            max-width: 200px;
+            margin: 20px 0;
+        }
+
+        .link-btn {
+            display: inline-block;
+            background-color: #9B7FBF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .link-btn:hover {
+            background-color: #7f5fa4;
+        }
+
+        audio {
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #B19CD9;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>My Educational Journey</h1>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-button" onclick="openTab('tab1')">Preschool</button>
+    <button class="tab-button" onclick="openTab('tab2')">Primary School</button>
+    <button class="tab-button" onclick="openTab('tab3')">High School</button>
+    <button class="tab-button" onclick="openTab('tab4')">University</button>
+  </div>
+
+  <div class="content">
+    <div id="tab1" class="tab-content">
+        <h2>Preschool</h2>
+        <img src="pasti1.jpg" alt="Preschool">
+        <p>My educational journey began at Pasti Nurul Iman when I was 5 to 6 years old. This preschool experience provided me with an excellent foundation for learning, where I was introduced to the basics of education, including the alphabet and the art of forming simple sentences. Each day was filled with joy, curiosity, and a sense of accomplishment as I eagerly absorbed new knowledge and participated in engaging activities. These early years helped shape my creativity and introduced me to values such as sharing, teamwork, and building friendships that remain important to me even today.</p>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <h2>Primary School</h2>
+        <img src="sksp.png" alt="Primary School">
+        <p>I attended Sekolah Kebangsaan Selat Pulau from Standard 1 to Standard 6. During these formative years, I built a solid academic foundation and developed key skills that helped shape my character and work ethic. My primary school teachers were encouraging and always found creative ways to keep lessons exciting. I participated in various school activities such as sports events, art competitions, and the school's English public speaking, which allowed me to explore and show my talents. These years were great in shaping my love for learning and my desire to achieve academically.</p>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <h2>High School</h2>
+        <img src="abb.jpg" alt="High School">
+        <p>My secondary education occurred at Sekolah Menengah Agama Al-Abbasiah, where I spent 5 years from Form 1 to Form 5. During these years, I began to understand the importance of discipline, responsibility, and time management. I was actively involved in extracurricular activities like debate, sports, and volunteering. High school was challenging because I had to focus on two syllabus which are academic and deeniyah, but it pushed me to develop stronger study habits and a more focused approach to my education. It also deepened my interest in subjects like English, History, and Islamic Studies, which later influenced my choice of university program.</p>
+    </div>
+
+    <div id="tab4" class="tab-content">
+        <h2>University</h2>
+        <img src="uitmk.jpg" alt="University">
+        <p>Currently, I am pursuing my higher education at UiTM Kedah. The university has been an exciting and enriching experience, offering a dynamic learning environment where I have the chance to engage with various subjects related to my field of study. I am part of a diverse student body, which has enhanced my perspective on different cultures and academic disciplines. Aside from academics, I actively participate in university clubs and volunteer programs. The opportunities to develop both personally and professionally have been invaluable. I look forward to completing my studies and using the knowledge gained here to contribute positively to society.</p>
+        
+        <a href="https://www.uitm.edu.my/" class="link-btn" target="_blank">Visit UiTM Official Website</a>
+        
+        <p><audio controls>
+            <source src="laguuitm.m4a" type="audio/mp3">
+        </audio></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy;2024 All Rights Reserved | Designed by Alma Qistina</p>
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      var i, tabContent, tabButtons;
+      
+      tabContent = document.getElementsByClassName('tab-content');
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.remove('active');
+      }
+
+      tabButtons = document.getElementsByClassName('tab-button');
+      for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].style.backgroundColor = '#B19CD9'; 
+      }
+
+      document.getElementById(tabName).classList.add('active');
+      
+      var activeTabButton = Array.from(tabButtons).find(button => button.textContent.toLowerCase() === tabName.replace('tab', '').toLowerCase());
+      activeTabButton.style.backgroundColor = '#9B7FBF';
+    }
+
+   openTab('tab1');
+  </script>
+</body>
+</html>

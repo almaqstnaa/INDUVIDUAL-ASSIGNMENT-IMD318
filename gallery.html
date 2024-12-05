@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+    body {
+      background-color: #f0d7df;
+      font-family: bettermilk;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-family: Bettermilk;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+      background-color: #ca8e82; 
+      border-radius: 10px;
+    }
+
+    .slider {
+      width: 80%;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slider-container {
+      display: flex;
+      animation: slide 20s infinite;
+    }
+
+    .slider img {
+      width: 200px; 
+      height: 200px;
+      margin-right: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-320px); }
+      50% { transform: translateX(-640px); }
+      75% { transform: translateX(-960px); }
+      100% { transform: translateX(0); }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+      padding: 10px;
+      justify-items: center;
+    }
+
+    .gallery img {
+      width: 200px; 
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    footer {
+      background-color: #ca8e82;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    footer p {
+      margin: 0;
+    }
+</style>
+</head>
+<body>
+
+  <h2>My Gallery</h2>
+
+  <div class="slider">
+    <div class="slider-container">
+      <img src="gambar19.jpg" alt="Gambar 19">
+      <img src="gambar20.jpg" alt="Gambar 20">
+      <img src="gambar21.jpg" alt="Gambar 21">
+      <img src="gambar22.jpg" alt="Gambar 22">
+      <img src="gambar29.jpg" alt="Gambar 29">
+      <img src="gambar24.jpg" alt="Gambar 24">
+      <img src="gambar25.jpg" alt="Gambar 25">
+      <img src="gambar26.jpg" alt="Gambar 26">
+      <img src="gambar27.jpg" alt="Gambar 27">
+      <img src="gambar28.jpg" alt="Gambar 28">
+    </div>
+  </div>
+
+
+  <div class="gallery">
+    <img src="gambar13.jpg" alt="Gambar 1">
+    <img src="gambar2.jpg" alt="Gambar 2">
+    <img src="gambar3.jpg" alt="Gambar 3">
+    <img src="gambar4.jpg" alt="Gambar 4">
+    <img src="gambar5.jpg" alt="Gambar 5">
+    <img src="gambar6.jpg" alt="Gambar 6">
+    <img src="gambar7.jpg" alt="Gambar 7">
+    <img src="gambar8.jpg" alt="Gambar 8">
+    <img src="gambar9.jpg" alt="Gambar 9">
+    <img src="gambar10.jpg" alt="Gambar 10">
+    <img src="gambar11.jpg" alt="Gambar 11">
+    <img src="gambar12.jpg" alt="Gambar 12">
+    <img src="gambar33.jpg" alt="Gambar 13">
+    <img src="gambar32.jpg" alt="Gambar 14">
+    <img src="gambar15.jpg" alt="Gambar 15">
+    <img src="gambar16.jpg" alt="Gambar 16">
+    <img src="gambar17.jpg" alt="Gambar 17">
+    <img src="gambar18.jpg" alt="Gambar 18">
+  </div>
+
+ <h2>Foodies</h2>
+
+<div class="slider">
+    <div class="slider-container">
+      <img src="makanan1.jpg" alt="Gambar 19">
+      <img src="makanan2.jpg" alt="Gambar 20">
+      <img src="makanan3.jpg" alt="Gambar 21">
+      <img src="makanan4.jpg" alt="Gambar 22">
+      <img src="makanan5.jpg" alt="Gambar 23">
+      <img src="makanan6.jpg" alt="Gambar 24">
+      <img src="makanan7.jpg" alt="Gambar 25">
+      <img src="makanan8.jpg" alt="Gambar 26">
+      <img src="makanan9.jpg" alt="Gambar 27">
+      <img src="makanan10.jpg" alt="Gambar 28">
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="makanan11.jpg" alt="Gambar 1">
+    <img src="makanan12.jpg" alt="Gambar 2">
+    <img src="makanan13.jpg" alt="Gambar 3">
+    <img src="makanan14.jpg" alt="Gambar 4">
+    <img src="makanan15.jpg" alt="Gambar 5">
+    <img src="makanan16.jpg" alt="Gambar 6">
+  </div>
+
+ <h2>pretty place's pics</h2>
+
+<div class="slider">
+    <div class="slider-container">
+      <img src="tempat1.jpg" alt="Gambar 19">
+      <img src="tempat2.jpg" alt="Gambar 20">
+      <img src="tempat3.jpg" alt="Gambar 21">
+      <img src="tempat4.jpg" alt="Gambar 22">
+      <img src="tempat5.jpg" alt="Gambar 23">
+      <img src="tempat6.jpg" alt="Gambar 24">
+      <img src="tempat7.jpg" alt="Gambar 25">
+      <img src="tempat8.jpg" alt="Gambar 26">
+      <img src="tempat9.jpg" alt="Gambar 27">
+      <img src="tempat10.jpg" alt="Gambar 28">
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="tempat11.jpg" alt="Gambar 1">
+    <img src="tempat12.jpg" alt="Gambar 2">
+    <img src="tempat13.jpg" alt="Gambar 3">
+    <img src="tempat14.jpg" alt="Gambar 4">
+    <img src="tempat15.jpg" alt="Gambar 5">
+    <img src="tempat16.jpg" alt="Gambar 6">
+  </div>
+
+   <footer>
+    <p>&copy;2024 All Rights Reserved | Designed by Alma Qistina</p>
+  </footer>
+
+</body>
+</html>

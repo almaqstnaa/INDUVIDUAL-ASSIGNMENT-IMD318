@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Experiences</title>
+<style>
+        body {
+            background-color: #f4f8f7; 
+            font-family: 'Georgia', sans-serif;
+            color: #5c5c5c;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #80c5c5; 
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #4682B4; 
+            margin: 0;
+        }
+        .navbar {
+            background-color: #4682B4; 
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .experience-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #e1eff1; 
+        }
+        .experience-section h2 {
+            font-size: 28px;
+            color: #4682B4; 
+            margin-bottom: 20px;
+        }
+        .experience-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #7c7c7c;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .experience-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px auto;
+            background-color: #d1e8e2; 
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .experience-item img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .experience-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .experience-item h3 {
+            font-size: 24px;
+            color: #4682B4; 
+            margin-bottom: 15px;
+        }
+        .experience-item p {
+            max-width: 600px;
+            color: #4e4e4e; 
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify; 
+            margin-bottom: 15px;
+        }
+        .experience-item ul {
+            max-width: 600px;
+            text-align: left;
+            color: #4e4e4e; 
+            font-size: 16px;
+            line-height: 1.6;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .footer {
+            background-color: #4682B4; 
+	    font-family: Arial;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .experience-item {
+                padding: 10px;
+                margin: 20px auto;
+            }
+            .experience-item img {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>My Experiences</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#internship">Internship</a>
+        <a href="#sulam">Sulam</a>
+    </div>
+
+    <div class="experience-section">
+        <h2>Here's my experiences</h2>
+        <p>Here are some highlights from my experiences journey, where I learned new skills and gained useful knowledge that helped me grow and improve in many ways.</p>
+        
+        <div class="experience-item" id="internship">
+            <img src="ms.png" alt="Internship at Mahsing Company">
+            <h3>Internship at Mahsing</h3>
+            <p>During my internship, I worked on several projects that enhanced my skills in project management and teamwork. I collaborated with various departments to ensure the successful execution of projects. Working in a large company with international connections provided me with valuable insights into document management and customer communication. I also created and managed new customer records for their orders, all under the guidance of my senior sales executive, Shally Siew Khim, who taught me a lot throughout the internship.</p>
+            <ul>
+                <li>Assisted in project planning and management.</li>
+                <li>Collaborated with teams to meet project deadlines.</li>
+                <li>Improved communication skills by interacting with multiple departments.</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item" id="sulam">
+            <img src="sulamlogo.jpg" alt="Sulam Program">
+            <h3>Sulam</h3>
+            <p>This program was part of a community service initiative under UiTM, specifically through the SULAM program. As a team, we organized an outreach project involving high school students and special needs (OKU) schools. We conducted various activities aimed at fostering engagement, learning, and inclusivity.</p>
+            <p>The experience not only allowed me to contribute to the community but also improved my communication, organization, and teamwork skills. Interacting with students from different backgrounds and making a positive impact through our efforts was truly rewarding.</p>
+            <ol>
+                <li>Organized and coordinated community events.</li>
+                <li>Engaged with local members and volunteers.</li>
+                <li>Developed leadership and teamwork skills.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy;2024 All Rights Reserved | Designed by Alma Qistina</p>
+    </div>
+
+</body>
+</html>
